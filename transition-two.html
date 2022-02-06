@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Transition with Barba.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body data-barba="wrapper">
+    <div class="bg-slate-50 text-slate-700">
+      <header class="bg-white">
+        <nav class="container mx-auto py-6 px-5 px-md-8">
+          <ul class="flex">
+            <li><a class="mr-4" href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main
+        class="page container mx-auto py-6 px-5 px-md-8"
+        data-barba="container"
+        data-barba-namespace="transition-two"
+      >
+        <div id="transition-two">
+          <section class="banner py-10 md:py-16">
+            <div class="mb-8">
+              <img
+                class="banner__image w-full object-cover aspect-[2.8]"
+                src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80"
+                alt="banner image"
+              />
+            </div>
+
+            <div class="banner__text">
+              <div>
+                <h1 class="text-4xl font-bold mb-6 md:mb-8">
+                  The Blue Orange, Sweet!
+                </h1>
+                <div class="mb-6 md:mb-8 text-lg md:text-xl">
+                  <p class="mb-6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur ex error, soluta deleniti, unde aut nam aliquam
+                    totam eius, est quia sit enim illum? Suscipit fugit possimus
+                    voluptatem blanditiis velit.
+                  </p>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Praesentium cupiditate architecto optio saepe doloribus
+                    dicta laudantium incidunt vero, natus ex atque magni quasi
+                    placeat magnam quos beatae ullam repudiandae similique!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
